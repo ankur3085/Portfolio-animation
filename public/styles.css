@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+#name {
+  margin: 5px 150px;
+  font-size: 3vw;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 16px;
+}
+
+#social-icons {
+  position: fixed;
+  bottom: 20px;
+  padding: 10px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#social-icons a {
+  margin-right: 10px;
+}
+
+#whatsapp-icon img,
+#linkedin-icon img,
+#instagram-icon img {
+  width: 30px;
+  height: auto;
+}
+
+#whatsapp-icon img {
+  width: 30px;
+  height: auto;
+}
+
+#cover {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#content {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#text-container {
+  padding: 20px;
+}
+
+#title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#role {
+  font-size: 18px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.typing-effect span {
+  display: inline-block;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  animation: typing-animation 2s infinite;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 1200px) {
+  #name {
+    margin: 5px 50px;
+    font-size: 3.5vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #name {
+    margin: 5px 20px;
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #name {
+    margin: 5px 10px;
+    font-size: 5vw;
+  }
+
+  #header {
+    padding: 10px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  #social-icons {
+    left: 10px;
+  }
+
+  #content {
+    padding: 10px;
+  }
+
+  #title {
+    font-size: 24px;
+  }
+
+  #role {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  #description {
+    font-size: 12px;
+  }
+
+  #hireBtn,
+  #contactBtn {
+    padding: 8px 16px;
+    margin: 8px;
+    font-size: 12px;
+  }
+}
+
+@keyframes typing-animation {
+  0% {
+    opacity: 0;
+    font-weight: lighter;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    font-weight: bolder;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    font-weight: bolder;
+    transform: scale(1);
+  }
+}
+
+#description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-height: none;
+  overflow-y: hidden;
+  text-align: center;
+  white-space: pre-line;
+}
+
+#hireBtn,
+#contactBtn {
+  cursor:pointer;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+#hireBtn:hover,
+#contactBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+#cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-size: cover;
+  z-index: 0;
+}
+
+#cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url('/images/lights.jpg') repeat-y center center fixed;
+  background-size: cover;
+  z-index: 0;
+  animation: elevator-animation 20s linear infinite;
+}
+
+@keyframes elevator-animation {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+<!-- views/skills.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ankur's Portfolio - Skills</title>
+  
+  </head>
+  <link rel="stylesheet" href="/sstyles.css">
+  <style>
+  
+  </style>
+</head>
+<body>
+  <header id="header">
+    <div id="name" class="ankur-text">Ankur.</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="https://docs.google.com/document/d/1D5rfiikMiMccQTkRg4vPzsjK_6-FKyjJyfASq69zMII/edit?usp=sharing">Resume</a>
+    </nav>
+  </header>
+
+  <div id="cover">
+    <div id="content">
+      <div id="text-container">
+        <div id="title">Known Frameworks</div>
+
+        <div class="frameworks">
+          <div class="framework-block">
+            <img src="Images/Nodejs.png" alt="Framework 1">
+            <div class="framework-title">Nodejs</div>
+          </div>
+          <div class="framework-block">
+            <img src="Images/React.ico" alt="Framework 2">
+            <div class="framework-title">React</div>
+          </div>
+          <div class="framework-block">
+            <img src="Images/SQL.png" alt="Framework 3">
+            <div class="framework-title">SQL</div>
+          </div>
+          <div class="framework-block">
+            <img src="Images/Bootstrap.png" alt="Framework 4">
+            <div class="framework-title">Bootstrap</div>
+          </div>
+        </div>
+        
+  
+  <div id="cover">
+    <div id="certifications">
+    <div id="certifications-title" class="typing-effect">My Certifications</div>
+    <div class="certification-cards">
+      
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/prompt.png" alt="Certification 1">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Promt Engineering for ChatGPT</h3></a>
+          <p>by VanderBilt UNiversity</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/database.png" alt="Certification 2">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Databases and SQL for Data Science</h3></a>
+          <p>by IBM</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/Business Strategy.png" alt="Certification 3">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Business Strategy</h3></a>
+          <p>by University of Illinois</p>
+        </div>
+      </div>
+
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/Datascience.png" alt="Certification 4">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Introduction to Data Science</h3></a>
+          <p>by IBM</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/Negotiation.png" alt="Certification 5">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Successful Negotiation</h3></a>
+          <p>by Linkedin Learning</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/Leading.png" alt="Certification 6">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Leading the Organization Monthly</h3></a>
+          <p>by Linkedin Learning</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/DM.png" alt="Certification 7">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Digital Marketing Foundation</h3></a>
+          <p>by Linkedin Learning</p>
+        </div>
+      </div>
+      <div class="certification-card">
+        <div class="certification-image">
+          <img src="Images/Excel.png" alt="Certification 8">
+        </div>
+        <div class="certification-details">
+          <a href="https://drive.google.com/drive/folders/1-17hssBeS0WXHkXtwxlBHQMpKqJm2wDa?usp=drive_link"><h3>Excel for Business</h3></a>
+          <p>by Macquarie University</p>
+        </div>
+      </div>
+      
+    </div>
+    </div>
+  </div>
+  <!-- Footer -->
+
+<!-- Footer -->
+
+  <script src="/app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var points = document.querySelectorAll('.point');
+      var languageProjects = document.querySelectorAll('.language-projects');
+
+      points.forEach(function (point, index) {
+        point.addEventListener('click', function () {
+          points.forEach(function (p) {
+            p.classList.remove('active-point');
+          });
+
+          point.classList.add('active-point');
+
+          languageProjects.forEach(function (project) {
+            project.style.display = 'none';
+          });
+
+          var clickedLanguage = point.querySelector('.language').textContent.toLowerCase();
+          document.getElementById(clickedLanguage + '-projects').style.display = 'block';
+
+          var projectItems = document.querySelectorAll('#' + clickedLanguage + '-projects .project-item');
+          projectItems.forEach(function (projectItem, projectIndex) {
+            setTimeout(function () {
+              projectItem.style.display = 'flex';
+            }, projectIndex * 500);
+          });
+
+          setTimeout(function () {
+            languageProjects.forEach(function (project) {
+              project.style.display = 'none';
+            });
+            point.classList.remove('active-point');
+          }, 10000);
+        });
+      });
+    });
+  
+
+  
+
+initMDB({ Input });
+    document.addEventListener('DOMContentLoaded', function () {
+      var description = document.getElementById('title');
+      description.setAttribute('data-text', description.textContent);
+      description.classList.add('typing-effect');
+    });
+  </script>
+</body>
+</html>
+
