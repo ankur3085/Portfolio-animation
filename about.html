@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ankur's Portfolio - About Me</title>
+  <link rel="stylesheet" href="/astyles.css">
+</head>
+<body>
+  <header id="header">
+    <div id="name" class="ankur-text">Ankur.</div>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/skills">Skills</a>
+      <a href="https://docs.google.com/document/d/1D5rfiikMiMccQTkRg4vPzsjK_6-FKyjJyfASq69zMII/edit?usp=sharing">Resume</a>
+    </nav>
+  </header>
+  <div id="cover">
+  <div id="about-page">
+    <div id="about-content">
+      <div id="about-text-container">
+        <button id="aboutBtn" class="custom-button">About Me</button>
+        <div id="about-title">Hi, I'm Ankur</div>
+        <div id="about-description" class="typing-effect">
+          <span id="typed-text"></span>
+        </div>
+      </div>
+      <div id="about-image-container">
+        <img src="/images/Ankur.jpg" alt="Ankur's Profile">
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="/app.js"></script>
+  <!-- Add this script block after your description container in the body tag -->
+  <script>
+    const descriptionContainer = document.getElementById('typed-text');
+    const descriptionText = "A third-year student immersed in a BE program in Computer Science and Business Systems, I am passionately committed to bridging the realms of technology and business to forge innovative solutions. My academic journey has cultivated a solid foundation in both technical expertise and strategic thinking, emphasizing the transformative potential of automation in business. Beyond coursework, my entrepreneurial mindset drives me to creatively tackle challenges, aiming to contribute to business success and societal progress. Eager to amplify my skills, I am actively seeking on-field experience, recognizing the invaluable lessons it provides. I aspire to collaborate across disciplines, developing groundbreaking technologies that not only optimize business operations but also positively impact society. Committed to being a catalyst for positive change, I am determined to pioneer solutions that drive both business and societal growth through the judicious application of technology."; // Replace this with your actual description
+  
+    // Remove extra spaces
+    const cleanedDescription = descriptionText.trim();
+  
+    // Split the description into words
+    const words = cleanedDescription.split(' ');
+  
+    // Initialize index to 0
+    let index = 0;
+  
+    // Function to display the next word
+    function type() {
+      if (index < words.length) {
+        descriptionContainer.textContent += words[index] + ' ';
+        index++;
+        setTimeout(type, 200); // Adjust typing speed (milliseconds)
+      }
+    }
+  
+    // Start the typing effect
+    type();
+  </script>
+  <script>
+    /*document.addEventListener('DOMContentLoaded', function () {
+      var description = document.getElementById('about-description');
+      description.setAttribute('data-text', description.textContent);
+      description.classList.add('typing-effect');
+    });*/
+  </script>
+</body>
+</html>
